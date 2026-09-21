@@ -161,7 +161,8 @@ img {
 
 /* Hero Section */
 .hero {
-    background-color: #f4efeb;
+    background-color: #eae5e1;
+    position: relative;
     overflow: hidden;
 }
 
@@ -169,39 +170,55 @@ img {
     display: flex;
     align-items: center;
     min-height: 600px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
     flex: 1;
+    max-width: 600px;
     padding-right: 40px;
-    z-index: 2;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     line-height: 1.2;
     margin-bottom: 20px;
-    color: #222;
+    color: #111;
 }
 
 .hero-content p {
     font-size: 1.1rem;
-    color: var(--text-light);
+    color: #444;
     margin-bottom: 30px;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .hero-image {
-    flex: 1.2;
-    height: 600px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right, #eae5e1 0%, transparent 100%);
+    z-index: 2;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: right center;
 }
 
 /* Benefits Section */
@@ -600,8 +617,9 @@ img {
     .mobile-menu-btn { display: block; }
     
     .hero-container { flex-direction: column; text-align: center; padding-top: 40px; }
-    .hero-content { padding-right: 0; margin-bottom: 40px; }
-    .hero-image { width: 100%; height: 400px; }
+    .hero-content { padding-right: 0; margin-bottom: 40px; max-width: 100%; }
+    .hero-image { position: relative; width: 100%; height: 400px; right: auto; top: auto; z-index: 1; }
+    .hero-image::before { display: none; }
     
     .benefits-container, .values-container { flex-wrap: wrap; }
     .benefit-item, .value-item { flex: 0 0 45%; margin-bottom: 30px; }
