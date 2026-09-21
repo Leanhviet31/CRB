@@ -47,18 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Video player modal would open here.');
         });
     }
-
-    // Mobile footer accordion
-    const footerHeaders = document.querySelectorAll('.footer-col h4');
-    footerHeaders.forEach(header => {
-        header.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-                header.classList.toggle('active');
-                const ul = header.nextElementSibling;
-                if (ul) {
-                    ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
-                }
-            }
-        });
-    });
 });

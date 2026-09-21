@@ -356,14 +356,14 @@ img {
     background: #fff;
     padding: 25px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-    border: 1px solid rgba(0,0,0,0.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.02);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .stat-item .icon {
@@ -413,14 +413,14 @@ img {
     background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-    border: 1px solid rgba(0,0,0,0.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.02);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .brand-logo:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* Core Values Section */
@@ -672,7 +672,7 @@ img {
         left: 0;
         width: 100%;
         background-color: var(--bg-white);
-        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
         padding: 10px 0;
         border-top: 1px solid var(--border-color);
     }
@@ -695,7 +695,7 @@ img {
         display: block;
         padding: 15px 20px;
         font-size: 1.1rem;
-        border-bottom: 1px solid rgba(0,0,0,0.03);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     }
 
     .nav-list li:last-child a {
@@ -848,31 +848,7 @@ img {
         margin-bottom: 30px;
     }
 
-    .footer-col h4 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0;
-        padding: 15px 0;
-        border-bottom: 1px solid #eaeaea;
-        cursor: pointer;
-    }
 
-    .footer-col h4 i {
-        display: block;
-        font-size: 0.9rem;
-        color: #111;
-        transition: transform 0.3s ease;
-    }
-
-    .footer-col h4.active i {
-        transform: rotate(180deg);
-    }
-
-    .footer-col ul {
-        display: none;
-        padding: 15px 0 25px 0;
-    }
 }
 
 @media (max-width: 480px) {
