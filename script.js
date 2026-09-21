@@ -19,11 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mobile menu toggle placeholder
+    // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    if (mobileMenuBtn) {
+    const navMenu = document.querySelector('.nav-menu');
+    if (mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-            alert('Mobile menu toggle functionality would go here.');
+            navMenu.classList.toggle('active');
+            
+            // Toggle icon between bars and times
+            const icon = mobileMenuBtn.querySelector('i');
+            if (icon) {
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
         });
     }
 
@@ -34,4 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Video player modal would open here.');
         });
     }
+
+    // Mobile footer accordion
+    const footerHeaders = document.querySelectorAll('.footer-col h4');
+    footerHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                header.classList.toggle('active');
+                const ul = header.nextElementSibling;
+                if (ul) {
+                    ul.style.display = ul.style.display === 'flex' ? 'none' : 'flex';
+                }
+            }
+        });
+    });
 });
