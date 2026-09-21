@@ -889,6 +889,7 @@ img {
 
     .brands-container {
         gap: 15px;
+        flex-wrap: wrap;
     }
 
     .brand-logo {
