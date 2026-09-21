@@ -434,13 +434,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: nowrap;
+    gap: 15px;
 }
 
 .brand-logo {
-    height: 90px;
-    width: 160px;
+    height: 75px;
+    width: 140px;
     object-fit: contain;
     background: #fff;
     padding: 20px;
