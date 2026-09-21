@@ -383,13 +383,15 @@ img {
     gap: 30px;
 }
 
-.brand-item {
-    flex: 1;
-    min-width: 120px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #555;
+.brand-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
 }
 
 /* Core Values Section */
