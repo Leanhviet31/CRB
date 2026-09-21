@@ -857,10 +857,13 @@ img {
     }
 
     .benefit-item,
-    .value-item,
     .stat-item,
     .footer-col {
         flex: 0 0 100%;
+    }
+
+    .value-item {
+        flex: 0 0 calc(50% - 15px);
     }
 
     .brands-container {
