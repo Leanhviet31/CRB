@@ -290,7 +290,7 @@ img {
 
 /* About Section */
 .about {
-    padding: 50px 0 160px;
+    padding: 50px 0 95px;
     background-color: var(--bg-white);
 }
 
@@ -356,10 +356,10 @@ img {
 
 .watermark {
     position: absolute;
-    right: -30px;
-    bottom: -150px;
+    right: -1px;
+    bottom: -105px;
     font-family: 'Dancing Script', cursive;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.08);
     line-height: 1.1;
@@ -817,6 +817,10 @@ img {
         margin-left: 0;
     }
 
+    .hero-watermark {
+        display: none;
+    }
+
     .hero-image {
         position: relative;
         width: 100%;
@@ -873,7 +877,7 @@ img {
 
     .watermark {
         position: relative;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         right: auto;
         bottom: auto;
         margin-top: 20px;
