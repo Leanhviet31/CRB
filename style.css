@@ -323,13 +323,15 @@ img {
 
 .watermark {
     position: absolute;
-    right: -20px;
-    bottom: 0;
-    font-size: 3rem;
-    font-weight: 800;
-    color: rgba(0,0,0,0.03);
-    line-height: 1;
+    right: 0;
+    bottom: -10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.08);
+    line-height: 1.1;
     text-align: right;
+    transform: rotate(-5deg);
     pointer-events: none;
 }
 
